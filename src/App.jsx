@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import "./Header"
+import "./Promo_banner"
+import Header from './Header'
+import Promo_banner from "./Promo_banner"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    
+      <Header/>
+      <Promo_banner/>
+      <h1 class="text-faint-grey font-black font-urbanist text-[48px] leading-[57.6px] letter-spacing-40 text-center mt-[12px]">MEN’S SNEAKERS</h1>
     </>
   )
 }

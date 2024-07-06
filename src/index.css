@@ -1,1 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base {
+  .letter-spacing-40 {
+    letter-spacing: 0.4em;
+  }
+}
