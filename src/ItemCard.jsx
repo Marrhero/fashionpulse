@@ -1,4 +1,4 @@
-export default function ItemCard({props}){
+export default function ItemCard(props){
     let image = props.image;
     
     return(
@@ -6,7 +6,7 @@ export default function ItemCard({props}){
             <div className="flex flex-col align-baseline justify-start">
                 
                 <div className="w-[13rem] h-[21.3125rem] bg-ultra-faint-grey">
-                    <img className="w-[13rem] h-[21.3125rem]" src="./images/Rectangle 6099.png" alt="" />
+                    <img className="w-[13rem] h-[21.3125rem]" src={image} alt="" />
                 </div>
 
                 

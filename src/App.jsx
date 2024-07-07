@@ -23,36 +23,39 @@ function App() {
 
         <div className="flex flex-col ml-[6.28vw] space-y-[3.625rem]">
           <div className="flex flex-row space-x-[2.72vw]">
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/image 85.png"/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/image 85.png"/>
             </div>
 
             <div className="flex flex-row space-x-[2.72vw]">
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/image 85.png"/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/image 85.png"/>
             </div>
 
-            <div className="flex flex-row space-x-[2.72vw]">
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-            </div>
 
             <div className="flex flex-row space-x-[2.72vw]">
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
-              <ItemCard/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/image 85.png"/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/image 85.png"/>
             </div>
+
+
+            <div className="flex flex-row space-x-[2.72vw]">
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/image 85.png"/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/Rectangle 6099.png"/>
+              <ItemCard image="./images/image 85.png"/>
+            </div>
+
         </div>
         
       </div>
