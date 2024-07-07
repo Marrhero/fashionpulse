@@ -1,4 +1,6 @@
-export default function ItemCard(){
+export default function ItemCard({props}){
+    let image = props.image;
+    
     return(
         <>
             <div className="flex flex-col align-baseline justify-start">
