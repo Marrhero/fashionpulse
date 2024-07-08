@@ -47,7 +47,9 @@ function App() {
         <div className="mt-[0.625rem] md:mt-0">
           <Header toggleNavRail={toggleNavRail}/>
         </div>
-        <PromoBanner/>
+        <div className="mt-0 md:[0.75rem]">
+          <PromoBanner/>
+        </div>
       </div>
       
 
@@ -57,46 +59,34 @@ function App() {
         <Sidebar/>
 
         {/*PRODUCT CARDS CONTAINER */}
-        <div className="flex flex-col ml-[6.28vw] space-y-[3.625rem] w-[71.18vw]">
-          <div className="flex flex-row space-x-[2.72vw]">
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/image 85.png"/>
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/image 85.png"/>
-            </div>
-
-            <div className="flex flex-row space-x-[2.72vw]">
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/image 85.png"/>
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/image 85.png"/>
-            </div>
-
-
-            <div className="flex flex-row space-x-[2.72vw]">
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/image 85.png"/>
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/image 85.png"/>
-            </div>
-
-
-            <div className="flex flex-row space-x-[2.72vw]">
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/image 85.png"/>
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/Rectangle 6099.png"/>
-              <ItemCard image="./images/image 85.png"/>
-            </div>
+        <div className="flex flex-row align-middle m-0 justify-between p-0 flex-wrap flex-1 ml-[6.28vw] mr-[5.035vw]">
+          
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/image 85.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/image 85.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/image 85.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/image 85.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/image 85.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/image 85.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/image 85.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/Rectangle 6099.png"/>
+          <ItemCard image="./images/image 85.png"/>
 
         </div>
         
       </div>
 
-      <div className="ml-[23.9vw] mt-[9.706rem] mb-[8.6875rem]">
+      <div className="ml-[23.9vw] mt-[9.706rem] mb-[8.6875rem] mr-[5.035vw]">
         <CategoriesBanner/> 
       </div>
       

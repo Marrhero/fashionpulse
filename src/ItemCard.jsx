@@ -3,13 +3,12 @@ export default function ItemCard(props){
     
     return(
         <>
-            <div className="flex flex-col align-baseline justify-start">
+            <div className="flex flex-col justify-start mb-[3.625rem] ">
                 
-                <div className="w-[12.04vw] h-[21.3125rem] bg-ultra-faint-grey">
+                <div className="w-[12.04vw] h-auto bg-ultra-faint-grey">
                     <img className=" overflow-hidden" src={image}/>
                 </div>
-
-                
+             
                 <div className="flex flex-col text-[1.25rem] font-medium font-urbanist">
                     <h4>Nike Jordan Mid</h4>
                     

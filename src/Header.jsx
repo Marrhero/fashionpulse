@@ -12,18 +12,18 @@ export default function Header({toggleNavRail}){
                 </div>
 
                 <div className="flex flex-row space-x-[12.21vw] align-middle">
-                    <ul className="flex-row font-urbanist font-medium space-x-[4.6875vw] m-0 my-auto hidden md:flex">
-                        <li className="">Men</li>
+                    <ul className="flex-row font-urbanist font-medium w-[24.248vw] space-x-[4.6875vw] m-0 my-auto hidden md:flex">
+                        <li>Men</li>
                         <li>Women</li>
                         <li>Collections</li>
                         <li>Sale</li>
                     </ul>
 
-                    <div className="flex flex-row my-auto space-x-[5.21vw]">
+                    <div className="flex flex-row my-auto justify-between">
                         
                         <input type="text" className="font-urbanist text-[1.125rem] font-medium h-[2.625rem] w-[13.25vw] rounded-[2rem] hidden md:block" placeholder="Search"/>
                         
-                        <div className="flex flex-row space-x-[0.640625rem] md:space-x-[0.69vw]">
+                        <div className="flex flex-row md:w-[4.75rem] space-x-[0.640625rem] md:space-x-[0.69vw] ml-2 mr-[0.405rem]">
                             <img className="w-[0.84375rem] md:w-[1.5rem]" src="./images/heart_icon.svg" alt="" />
                             <img className="w-[0.84375rem] md:w-[1.5rem]" src="./images/cart_icon.svg" alt="" />
                         </div>
