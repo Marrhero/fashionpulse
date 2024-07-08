@@ -5,8 +5,8 @@ export default function ItemCard(props){
         <>
             <div className="flex flex-col align-baseline justify-start">
                 
-                <div className="w-[13rem] h-[21.3125rem] bg-ultra-faint-grey">
-                    <img className="w-[13rem] h-[21.3125rem]" src={image} alt="" />
+                <div className="w-[12.04vw] h-[21.3125rem] bg-ultra-faint-grey">
+                    <img className=" overflow-hidden" src={image}/>
                 </div>
 
                 

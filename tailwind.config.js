@@ -7,7 +7,9 @@ export default {
     "./src/PromoBanner.jsx",
     "./src/Footer.jsx",
     "./src/Sidebar.jsx",
-    "./src/ItemCard.jsx"
+    "./src/ItemCard.jsx",
+    "./src/CategoriesBanner.jsx",
+    "./src/NavRail.jsx"
 
   ],
   theme: {
