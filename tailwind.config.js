@@ -9,7 +9,10 @@ export default {
     "./src/Sidebar.jsx",
     "./src/ItemCard.jsx",
     "./src/CategoriesBanner.jsx",
-    "./src/NavRail.jsx"
+    "./src/NavRail.jsx",
+    "./src/pages/Cart.jsx",
+    "./src/pages/Checkout.jsx",
+    "./src/pages/ProductListing.jsx"
 
   ],
   theme: {
@@ -20,6 +23,7 @@ export default {
         'dark-green' : '#2A8703',
         'faint-grey' : '#E5E5E5',
         'dark-grey' : '#888888',
+        'check-grey' : '#5E5E5E',
         'mild-green' : '#EAF3E6',
         'ultra-faint-grey' : '#F9F9F9',
 

@@ -4,9 +4,6 @@ import "./Footer"
 import Header from './Header'
 import PromoBanner from "./PromoBanner"
 import Footer from "./Footer"
-import Sidebar from "./Sidebar"
-import ItemCard from "./ItemCard"
-import CategoriesBanner from "./CategoriesBanner"
 import NavRail from "./NavRail"
 
 import { useState, useEffect, useRef} from "react"
@@ -50,7 +47,7 @@ function App() {
         <div className="mt-[0.625rem] md:mt-0">
           <Header toggleNavRail={toggleNavRail}/>
         </div>
-        <div className="mt-0 md:[0.75rem]">
+        <div className="mt-0 md:mt-[0.75rem]">
           <PromoBanner/>
         </div>
       </div>

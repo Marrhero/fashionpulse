@@ -27,7 +27,7 @@ export default function Header({toggleNavRail}){
                         
                         <div className="flex flex-row md:w-[4.75rem] space-x-[0.640625rem] md:space-x-[0.69vw] ml-[5.208] mr-[0.405rem]">
                             <img className="w-[0.84375rem] md:w-[1.5rem]" src="./images/heart_icon.svg" alt="" />
-                            <Link to="/cart">
+                            <Link className="my-auto" to="/cart">
                                 <img className="w-[0.84375rem] md:w-[1.5rem]" src="./images/cart_icon.svg" alt="" />
                             </Link>
                         </div>

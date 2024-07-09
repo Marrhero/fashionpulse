@@ -1,7 +1,7 @@
 export default function(){
     return(
         <>
-            <div className="md:flex flex-col hidden space-y-[2.3125rem] ml-[5.03vw] w-[12.9375rem]">
+            <div className="md:flex flex-col hidden space-y-[2.3125rem] w-[12.9375rem]">
 
                 {/*Title segment */}
                 <div className="flex flex-col">
