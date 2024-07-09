@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 
 export default function Header({toggleNavRail}){
 
@@ -23,9 +25,11 @@ export default function Header({toggleNavRail}){
                         
                         <input type="text" className="font-urbanist text-[1.125rem] font-medium h-[2.625rem] w-[13.25vw] rounded-[2rem] hidden md:block" placeholder="Search"/>
                         
-                        <div className="flex flex-row md:w-[4.75rem] space-x-[0.640625rem] md:space-x-[0.69vw] ml-2 mr-[0.405rem]">
+                        <div className="flex flex-row md:w-[4.75rem] space-x-[0.640625rem] md:space-x-[0.69vw] ml-[5.208] mr-[0.405rem]">
                             <img className="w-[0.84375rem] md:w-[1.5rem]" src="./images/heart_icon.svg" alt="" />
-                            <img className="w-[0.84375rem] md:w-[1.5rem]" src="./images/cart_icon.svg" alt="" />
+                            <Link to="/cart">
+                                <img className="w-[0.84375rem] md:w-[1.5rem]" src="./images/cart_icon.svg" alt="" />
+                            </Link>
                         </div>
                     </div>
                 </div>

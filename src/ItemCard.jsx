@@ -23,6 +23,10 @@ export default function ItemCard(props){
 
                     <div className="flex flex-row">
                         <img src="./images/star_unfilled.svg" alt="" />
+                        <img src="./images/star_unfilled.svg" alt="" />
+                        <img src="./images/star_unfilled.svg" alt="" />
+                        <img src="./images/star_unfilled.svg" alt="" />
+                        
                     </div>
                  </div>
             </div>
