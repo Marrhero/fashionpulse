@@ -1,6 +1,18 @@
 export default function ItemCard(props){
     let image = props.image;
+    /* Spread this array later*/
+    let product = props.product;
+    let productName = "";
+    let price = [];
     
+
+    if (product != null)
+    {
+        productName = product.name;
+        price = product.current_price[0]?.NGN[0];
+        console.log(price);
+    }
+        
     return(
         <>
             <div className="flex flex-col justify-start mb-[3.625rem] ">
@@ -10,15 +22,14 @@ export default function ItemCard(props){
                 </div>
              
                 <div className="flex flex-col text-[1.25rem] font-medium font-urbanist">
-                    <h4>Nike Jordan Mid</h4>
-                    
+                    <h4>{productName}</h4>
                     <div className="flex flex-row space-x-[1.25rem]">
                         <div className="flex flex-row font-light">
                             <p>₦</p>
-                            <p>120000</p>
+                            <p>{price}</p>
                         </div>
 
-                        <img className="w-[2.5rem] inline" src=".\images\ic_round-add.svg" alt="" />
+                        <img className="w-[1.62125rem] md:w-[2.5rem] inline" src=".\images\ic_round-add.svg" alt="" />
                     </div>
 
                     <div className="flex flex-row">
