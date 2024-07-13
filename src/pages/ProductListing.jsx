@@ -6,13 +6,17 @@ import { useState, useEffect } from "react";
 
 export default function ProductListing(){
 
+  const appId = import.meta.env.VITE_APP_ID;
+  const apiKey = import.meta.env.VITE_API_KEY;
+
+
         const [products, setProducts] = useState([]);
       
         useEffect(() => {
           const fetchProducts = async () => {
             try {
               const response = await fetch(
-                "https://timbu-get-all-products.reavdev.workers.dev/?organization_id=f44fb35060be4c7aadeab2810c700bc8&Appid=FLRK0IB2DRDGOIZ&Apikey=c8c9e1a1fbdb4c94bbb7b7dfb96c470720240712192548445158"
+                `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=${import.meta.env.VITE_ORGANIZATION_ID}&Appid=${appId}&Apikey=${apiKey}`
               );
               const data = await response.json();
 

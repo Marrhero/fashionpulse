@@ -19,10 +19,10 @@ export default function ItemCard(props){
         
     return(
         <>
-            <div className="flex flex-col justify-start mb-[3.625rem] ">
+            <div className="flex flex-col w-[10.4375rem] md:w-[13rem] justify-start mb-[3.625rem] ">
                 
-                <div className="w-[12.04vw] h-auto bg-ultra-faint-grey">
-                    <img className="overflow-hidden" src={photo}/>
+                <div className="w-fit h-auto bg-ultra-faint-grey">
+                    <img className="w-fit" src={photo}/>
                 </div>
              
                 <div className="flex flex-col text-[1.25rem] font-medium font-urbanist">
