@@ -12,7 +12,7 @@ export default function ProductListing(){
           const fetchProducts = async () => {
             try {
               const response = await fetch(
-                "/api/products?organization_id=f44fb35060be4c7aadeab2810c700bc8&Appid=FLRK0IB2DRDGOIZ&Apikey=c8c9e1a1fbdb4c94bbb7b7dfb96c470720240712192548445158"
+                "https://timbu-get-all-products.reavdev.workers.dev/?organization_id=f44fb35060be4c7aadeab2810c700bc8&Appid=FLRK0IB2DRDGOIZ&Apikey=c8c9e1a1fbdb4c94bbb7b7dfb96c470720240712192548445158"
               );
               const data = await response.json();
 

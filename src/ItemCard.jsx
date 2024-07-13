@@ -1,16 +1,17 @@
 export default function ItemCard(props){
-    let image = props.image;
+    
     /* Spread this array later*/
     let product = props.product;
     let productName = "";
     let price = [];
+    let photo = "";
     
-
     if (product != null)
     {
         productName = product.name;
         price = product.current_price[0]?.NGN[0];
-        console.log(price);
+        photo = product?.photos[0];
+        console.log(photo);
     }
         
     return(
@@ -18,7 +19,7 @@ export default function ItemCard(props){
             <div className="flex flex-col justify-start mb-[3.625rem] ">
                 
                 <div className="w-[12.04vw] h-auto bg-ultra-faint-grey">
-                    <img className=" overflow-hidden" src={image}/>
+                    <img className=" overflow-hidden" src="/api/images/${photo.url}"/>
                 </div>
              
                 <div className="flex flex-col text-[1.25rem] font-medium font-urbanist">
