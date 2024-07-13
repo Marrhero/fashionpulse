@@ -46,12 +46,16 @@ export default function ProductListing(){
                 <div className="flex flex-row align-middle m-0 justify-between ml-[6.77vw] p-0 flex-wrap flex-1 mr-0 ">
                 
            
-                <ItemCard product={products[0]} image="./images/Rectangle 6099.png"/>
-                <ItemCard product={products[0]} image="./images/image 85.png"/>
-                <ItemCard product={products[1]} image="./images/Rectangle 6099.png"/>
-                <ItemCard product={products[1]} image="./images/Rectangle 6099.png"/>
-                <ItemCard product={products[2]} image="./images/image 85.png"/>
-                <ItemCard product={products[2]} image="./images/Rectangle 6099.png"/>
+                <ItemCard product={products[0]} />
+                <ItemCard product={products[1]} />
+                <ItemCard product={products[2]} />
+                <ItemCard product={products[3]} />
+                <ItemCard product={products[4]} />
+                <ItemCard product={products[5]} />
+                <ItemCard product={products[6]} />
+                <ItemCard product={products[7]} />
+                <ItemCard product={products[8]} />
+                <ItemCard product={products[9]} />
             
                 </div>
             
