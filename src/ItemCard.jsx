@@ -10,7 +10,10 @@ export default function ItemCard(props){
     {
         productName = product.name;
         price = product.current_price[0]?.NGN[0];
-        photo = product?.photos[0];
+          
+        if (product.photos && product.photos.length > 0 && product.photos[0]?.url) 
+            photo = "https://api.timbu.cloud/images/" + product.photos[0].url;
+
         console.log(photo);
     }
         
@@ -19,7 +22,7 @@ export default function ItemCard(props){
             <div className="flex flex-col justify-start mb-[3.625rem] ">
                 
                 <div className="w-[12.04vw] h-auto bg-ultra-faint-grey">
-                    <img className=" overflow-hidden" src="/api/images/${photo.url}"/>
+                    <img className="overflow-hidden" src={photo}/>
                 </div>
              
                 <div className="flex flex-col text-[1.25rem] font-medium font-urbanist">
