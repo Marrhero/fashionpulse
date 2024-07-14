@@ -4,7 +4,6 @@ import CategoriesBanner from "../CategoriesBanner"
 import { useState, useEffect } from "react";
 import PageButton from "../PageButton";
 
-
 export default function ProductListing(){
 
   const appId = import.meta.env.VITE_APP_ID;
@@ -34,7 +33,6 @@ export default function ProductListing(){
           fetchProducts();
         }, []);
 
-
         const handlePageChange = (pageNumber) => {
           setCurrentPage(pageNumber);
         };
@@ -57,27 +55,20 @@ export default function ProductListing(){
                 {displayedProducts.map((product, index) => (
                   <ItemCard key={index} product={product} />
                 ))}
-
-              {/*}
-                <ItemCard product={products[0]} />
-                <ItemCard product={products[1]} />
-                <ItemCard product={products[2]} />
-                <ItemCard product={products[3]} />
-                <ItemCard product={products[4]} />
-                <ItemCard product={products[5]} />
-                <ItemCard product={products[6]} />
-                <ItemCard product={products[7]} />
-                <ItemCard product={products[8]} />
-                <ItemCard product={products[9]} />
-              */}
                 </div>
             </div>
 
             <div className="flex flex-row mx-auto w-[25vw] space-x-4">
               <PageButton label="<" onClick={() => handlePageChange(Math.max(currentPage - 1, 1))} />
-              {[1, 2, 3].map((pageNumber) => (
-                <PageButton key={pageNumber} label={pageNumber.toString()} onClick={() => handlePageChange(pageNumber)} />
-              ))}
+
+              {[1, 2, 3].map((pageNumber) =>
+                {
+                  const active = pageNumber === currentPage;
+
+                return(<PageButton key={pageNumber} active={active} label={pageNumber.toString()} onClick={() => handlePageChange(pageNumber)} />)
+                }
+              )}
+
               <PageButton label=">" onClick={() => handlePageChange(Math.min(currentPage + 1, Math.ceil(products.length / itemsPerPage)))} />
             </div>
             
