@@ -10,6 +10,7 @@ export default {
     "./src/ItemCard.jsx",
     "./src/CategoriesBanner.jsx",
     "./src/NavRail.jsx",
+    "./src/PageButton.jsx",
     "./src/pages/Cart.jsx",
     "./src/pages/Checkout.jsx",
     "./src/pages/ProductListing.jsx"

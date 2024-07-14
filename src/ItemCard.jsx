@@ -13,8 +13,6 @@ export default function ItemCard(props){
           
         if (product.photos && product.photos.length > 0 && product.photos[0]?.url) 
             photo = "https://api.timbu.cloud/images/" + product.photos[0].url;
-
-        console.log(photo);
     }
         
     return(
