@@ -5,11 +5,13 @@ import Header from './Header'
 import PromoBanner from "./PromoBanner"
 import Footer from "./Footer"
 import NavRail from "./NavRail"
+import Recommendations from "./Recommendations"
 
 import { useState, useEffect, useRef} from "react"
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ProductListing from "./pages/ProductListing"
+import Product from "./pages/Product"
 import Cart from "./pages/Cart"
 import Checkout from "./pages/Checkout"
 
@@ -55,6 +57,7 @@ function App() {
       <div className="ml-[6.28vw] mr-[5.035vw]">
         <Routes>
           <Route path="/" element={<ProductListing/>}/>
+          <Route path="/product" element={<Product/>}/>
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/checkout" element={<Checkout/>}/>
         </Routes>

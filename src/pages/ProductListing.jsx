@@ -53,7 +53,7 @@ export default function ProductListing(){
                 <div className="flex flex-row align-middle m-0 justify-between ml-[6.77vw] p-0 flex-wrap flex-1 mr-0 ">
                 
                 {displayedProducts.map((product, index) => (
-                  <ItemCard key={index} product={product} />
+                    <ItemCard key={index} product={product} />
                 ))}
                 </div>
             </div>

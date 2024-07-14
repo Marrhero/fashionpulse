@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Recommendations from "../Recommendations"
 
 export default function Cart(){
     return(
@@ -67,13 +68,7 @@ export default function Cart(){
                 </div>
             </div>
 
-            <p className="hidden md:block font-urbanist font-semibold text-[2rem] mt-[1.8125rem]">Explore other Items</p>
-
-            <div className="hidden md:flex flex-row flex-shrink justify-between mb-[6.4375rem]">
-                <img src="./images/puma.png" alt="" />
-                <img src="./images/puma.png" alt="" />
-                <img src="./images/puma.png" alt="" />
-            </div>
+            <Recommendations/>
         </>
     )
 }

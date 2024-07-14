@@ -11,10 +11,12 @@ export default {
     "./src/CategoriesBanner.jsx",
     "./src/NavRail.jsx",
     "./src/PageButton.jsx",
+    "./src/Recommendations.jsx",
+
     "./src/pages/Cart.jsx",
     "./src/pages/Checkout.jsx",
-    "./src/pages/ProductListing.jsx"
-
+    "./src/pages/ProductListing.jsx",
+    "./src/pages/Product.jsx"
   ],
   theme: {
     extend: {
