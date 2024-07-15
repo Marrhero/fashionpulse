@@ -24,8 +24,8 @@ export default function Product(){
 
             <div className="flex flex-col md:flex-row md:justify-between mt-[1.875rem] mb-0 h-fit">
                 {/*PRODUCT DETAILS */}
-                <div className="flex flex-col justify-center text-center bg-ultra-faint-grey md:w-[51.85vw] md:h-[35.8125rem] rounded-[1.375rem]">
-                    <img className="md:h-fit mx-auto mt-[4.3125rem]" src={photo} alt="" />
+                <div className=" bg-ultra-faint-grey md:w-[51.85vw] md:h-[35.8125rem] rounded-[1.375rem]">
+                    <img className="md:h-[30rem] my-auto mx-auto mt-[4.3125rem]" src={photo} alt="" />
                 </div>
 
                 {/*CHECKOUT DETAILS CONTAINER*/}
