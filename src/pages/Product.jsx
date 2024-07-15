@@ -1,25 +1,31 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import Recommendations from "../Recommendations"
 
-export default function Product(props){
+export default function Product(){
 
-    {/*const name = props.productName;*/}
-    const name = props?.productName || "PRODUCT";
+    
+    const location = useLocation();
+    console.log(location)
+
+    const {product} = location.state || {};
+    const name = product?.name || "PRODUCT";
+
+    let photo="";
+
+    if (product.photos && product.photos.length > 0 && product.photos[0]?.url) 
+        photo = "https://api.timbu.cloud/images/" + product.photos[0].url;
+
 
     return(
         <>
             <h1 className="text-faint-grey font-black font-urbanist text-[1.125rem] md:text-[3rem] leading-[57.6px] letter-spacing-40 text-center mt-[12px] mb-[1.875rem]">
                 {name}
             </h1>
-            
-            <h1 className=" font-urbanist font-bold text-[2rem]">Cart Item(s) <span className="text-dark-grey">0</span></h1>
-
 
             <div className="flex flex-col md:flex-row md:justify-between mt-[1.875rem] mb-0 h-fit">
                 {/*PRODUCT DETAILS */}
                 <div className="flex flex-col justify-center text-center bg-ultra-faint-grey md:w-[51.85vw] md:h-[35.8125rem] rounded-[1.375rem]">
-                    <p className="text-dark-grey font-urbanist font-medium text-[1.5rem]">You don't have any items in your cart</p>
-                    <img className="md:w-[11.123rem] mx-auto mt-[4.3125rem]" src="./images/shopping-bag 1.png" alt="" />
+                    <img className="md:h-fit mx-auto mt-[4.3125rem]" src={photo} alt="" />
                 </div>
 
                 {/*CHECKOUT DETAILS CONTAINER*/}
